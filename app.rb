@@ -1,7 +1,7 @@
 require './environment'
 
 module FormsLab
-  class App < Sinatra::Base
+  class App 
 
     # code other routes/actions here
 
@@ -22,7 +22,7 @@ module FormsLab
     get '/pirates/:id' do
       @pirate = Pirate.find(params[:id])
 
-      erb :"pirates/show"
+      erb :pirates/show
     end
 
     post '/pirates' do
