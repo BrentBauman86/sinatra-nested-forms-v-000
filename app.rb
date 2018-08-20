@@ -11,7 +11,7 @@ module FormsLab
     #   erb :'pirates/index'
     # end
 
-    get '/views/root' do
+    get '/' do
       erb :root
     end
 
