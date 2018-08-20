@@ -15,9 +15,14 @@ module FormsLab
       erb :root
     end
 
-    get '/pirates/new' do
-      erb :'pirates/new'
+
+    get '/new' do
+      
     end
+
+    # get '/pirates/new' do
+    #   erb :'pirates/new'
+    # end
 
     get '/pirates/:id' do
       @pirate = Pirate.find(params[:id])
