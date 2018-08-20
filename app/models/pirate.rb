@@ -1,5 +1,5 @@
-class Pirate 
-
+class Pirate
+# has_many :ships
   attr_accessor :name, :weight, :height
 
   @@pirate = []
